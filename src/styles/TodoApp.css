@@ -1,0 +1,48 @@
+.todo-wrapper {
+  width: 99%;
+  padding-top: 160px;
+}
+
+.todos {
+  max-width: 680px;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  border-radius: 4%;
+  box-shadow: 0 5px 16px 0 rgba(75, 75, 72, 0.28);
+  justify-content: space-around;
+  background: #fff;
+  font-size: 5px;
+}
+
+.inputtext {
+  width: 88%;
+  padding-right: 8px;
+  padding-left: 12px;
+  border-radius: 5%;
+  font-size: 15px;
+}
+
+.inputsubmit {
+  background: transparent;
+  color: #4b4949;
+  cursor: pointer;
+  font-weight: 650;
+  margin-right: 12px;
+}
+
+.inputtext,
+.inputsubmit {
+  height: 47px;
+  outline: none;
+  border: none;
+}
+
+.submitwarning {
+  font-size: 15px;
+  color: rgb(197, 15, 15);
+  margin-top: 6px;
+  display: block;
+}
