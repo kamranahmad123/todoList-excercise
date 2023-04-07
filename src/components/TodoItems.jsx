@@ -3,7 +3,7 @@ import Proptypes from 'prop-types';
 import styles from 'styles/TodoItem.module.css';
 
 const TodoItems = ({
-  itemProp, handleChanges, delTodos, setUpdates,
+  itemProp, handleChange, delTodos, setUpdates,
 }) => {
   const [edit, setEdit] = useState(false);
   const handleEdits = () => {
@@ -28,7 +28,7 @@ const TodoItems = ({
         <input
           type="checkbox"
           checked={itemProp.completed}
-          onChange={() => handleChanges(itemProp.id)}
+          onChange={() => handleChange(itemProp.id)}
         />
         <button type="button" onClick={handleEdits}>Edit</button>
         <button type="button" onClick={() => delTodos(itemProp.id)}>Delete</button>
@@ -53,7 +53,7 @@ TodoItems.propTypes = {
     title: Proptypes.string.isRequired,
     completed: Proptypes.bool.isRequired,
   }).isRequired,
-  handleChanges: Proptypes.func.isRequired,
+  handleChange: Proptypes.func.isRequired,
   delTodos: Proptypes.func.isRequired,
   setUpdates: Proptypes.func.isRequired,
 };
